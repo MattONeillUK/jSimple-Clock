@@ -1,0 +1,25 @@
+﻿<!-- 
+ * ---------------------------------------- *
+ * jSimple Clock                            *
+ * HTML                               		*
+ * v1.0.1                                   *
+ * Matt O'Neill | www.matt-oneill.co.uk     *
+ * ---------------------------------------- *
+ -->
+
+
+<!-- mark up -->
+<div class="jSC"></div>
+
+<!-- requires jQuery UI -->
+<script src="/dependencies/jquery-1.8.3.js" type="text/javascript"></script>
+    <script src="jsimple-clock.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".jSC").jSC({
+                digital: false,
+                theme: "default", // default, skeuomorphism, skeuominimalism, codehouse
+                date: true
+            });
+        });
+    </script>

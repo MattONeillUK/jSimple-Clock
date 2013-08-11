@@ -1,0 +1,51 @@
+/* 
+ * ---------------------------------------- *
+ * jSimple Clock                            *
+ * CSS                                      *
+ * v1.0.1                                   *
+ * Matt O'Neill                             *
+ * ---------------------------------------- *
+ */
+
+/* jClock
+   ---------------------------- */
+.jSC { position:relative; float: left;font-family: Segoe UI; width: 200px; min-height: 40px; margin-top: 20px; }
+
+/* analog */
+.jSC .analog { display: none; width: 200px; height: 200px; float: left;  margin: 10px; }
+.jSC .analog .face {  background: url(../images/default.png); width: 200px; height: 200px; display: block;}
+.jSC .analog .hands { float: left; width: 200px; height: 200px; position: absolute; top: 30px; left: 9px;}
+.jSC .analog .hands span {  background: #fff; }
+.jSC .analog .hands .first-hand { height: 160px; width: 2px; position: absolute; left: 50%;   }
+.jSC .analog .hands .first-hand span { height:50px; width: 2px; display: block; top: 30px; position: absolute;}
+.jSC .analog .hands .second-hand { height: 160px; width: 2px; position: absolute; left: 50%; }
+.jSC .analog .hands .second-hand span { height:70px; width: 2px;display: block; top: 10px; position: absolute; }
+.jSC .analog .hands .third-hand {height: 160px; width: 2px; position: absolute; left: 50%; }
+.jSC .analog .hands .third-hand span { height:60px; width: 1px; display: block; top: 20px; position: absolute;}
+
+/* digital */
+.jSC .digital { width: 180px; height: 30px; background: #212121; padding: 10px; }
+.jSC .digital > div { text-align: center; float: left;width: 60px; height: 30px; color: #fff; font-size: 32px; line-height: 30px }
+
+/* date */
+.jSC .date { float: right; margin: 10px; }
+.jSC .date > span { margin-left: 5px;  }
+.jSC .date > span:first-child { margin-left: 0;  }
+
+/* themes
+   ---------------------------- */
+/* default */
+
+
+/* codehouse */
+.jSC.codehouse .analog .face {  background: url(../images/codehouse.png); width: 200px; height: 200px; display: block;}
+.jSC.codehouse .analog .hands { top:30px; left: 10px; }
+.jSC.codehouse .analog .hands span {  background: #c70c31; }
+
+/* skeuomorphism */
+.jSC.skeuomorphism .analog .face {  background: url(../images/skeuomorphism.png); width: 200px; height: 200px; display: block;}
+.jSC.skeuomorphism .analog .hands span { background: #111; }
+
+/* skeuominimalism */
+.jSC.skeuominimalism .analog .face {  background: url(../images/skeuominimalism.png); width: 200px; height: 200px; display: block;}
+.jSC.skeuominimalism .analog .hands span { background: #fff; }
